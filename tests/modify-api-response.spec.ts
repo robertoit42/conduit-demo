@@ -27,6 +27,6 @@ test.beforeEach(async ({ page }) => {
   // Expect a title "to contain" a substring.
   await expect(page.locator('.navbar-brand')).toHaveText(/conduit/);
   await expect(page.locator('.sidebar .tag-pill')).toContainText(['Automation', 'Playwright']);
-  await expect(page.locator ('.preview-link h1').first()).toContainText('this is a mock title for article');
+  await expect(page.locator ('.preview-link h1').first()).toContainText('this is a mock title for article should fail');
   await expect(page.locator ('.preview-link p').first()).toContainText('This is a Mock description for article');
   });
